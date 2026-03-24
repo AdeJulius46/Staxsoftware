@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-surface: #fbf9f4;
+  --color-on-surface: #1b1c19;
+  --color-on-surface-variant: #57423a;
+  --color-primary: #a03c01;
+  --color-on-primary: #ffffff;
+  --color-primary-fixed: #ffdbcd;
+  --color-on-primary-fixed: #360f00;
+  --color-surface-container: #f0eee9;
+  --color-surface-container-low: #f5f3ee;
+  --color-surface-container-lowest: #ffffff;
+  --color-outline-variant: #dec0b5;
+  --color-tertiary: #006193;
+  --color-tertiary-fixed: #cce5ff;
+  --color-tertiary-fixed-dim: #92ccff;
+  --color-on-tertiary-fixed: #001d31;
+  --color-surface-variant: #e4e2dd;
+}
+
+@layer utilities {
+  .dot-grid {
+    background-image: radial-gradient(#dec0b5 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .glass-panel {
+    backdrop-filter: blur(24px);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
