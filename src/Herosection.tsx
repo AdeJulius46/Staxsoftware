@@ -71,19 +71,19 @@ const Herosection = () => {
           </section>
 
           {/* Right Side: Product Demo & Folders */}
-          <section className=" w-full md:w-1/2 relative min-h-[600px] flex items-center justify-center dot-grid overflow-hidden bg-surface-container-low">
+         <section className="w-full md:w-1/2 relative min-h-[500px] md:min-h-[600px] flex items-center justify-center dot-grid overflow-hidden bg-surface-container-low py-12 md:py-0">
             {/* Floating Folder Modal A */}
             <motion.div 
               initial={{ opacity: 0, x: -50, rotate: -10, filter: "blur(8px)" }}
               animate={{ opacity: 0.85, x: 0, rotate: -3, filter: "blur(4px)" }}
               whileHover={{ opacity: 1, rotate: 0, scale: 1.05, zIndex: 50, filter: "blur(0px)" }}
-              className="  absolute top-20 left-10 glass-panel p-6 rounded-xl shadow-2xl w-64 z-20 cursor-default transition-all duration-300"
+              className="absolute top-10 left-4 md:top-20 md:left-10 glass-panel p-4 md:p-6 rounded-xl shadow-2xl w-48 md:w-64 z-20 cursor-default transition-all duration-300 scale-75 md:scale-100"
             >
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-xs uppercase tracking-tighter text-tertiary font-bold">STAX Solutions</span>
-                <span className="material-symbols-outlined text-tertiary">more_horiz</span>
+              <div className="flex items-center justify-between mb-3 md:mb-4">
+                <span className="text-[10px] md:text-xs uppercase tracking-tighter text-tertiary font-bold">STAX Solutions</span>
+                <span className="material-symbols-outlined text-tertiary text-sm md:text-base">more_horiz</span>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-2 md:gap-4">
                 {[
                   { name: "Commerce", desc: "POS & Financials" },
                   { name: "Health", desc: "Medical Management" },
@@ -92,13 +92,13 @@ const Herosection = () => {
                 ].map((folder) => (
                   <div
                     key={folder.name}
-                    className="relative aspect-square bg-tertiary-fixed rounded-lg flex flex-col items-center justify-center p-2 group cursor-pointer hover:bg-tertiary-fixed-dim transition-colors"
+                    className="relative aspect-square bg-tertiary-fixed rounded-lg flex flex-col items-center justify-center p-1 md:p-2 group cursor-pointer hover:bg-tertiary-fixed-dim transition-colors"
                   >
-                    <span className="material-symbols-outlined text-tertiary text-3xl">folder</span>
-                    <span className="text-[10px] mt-1 text-on-tertiary-fixed font-medium">{folder.name}</span>
+                    <span className="material-symbols-outlined text-tertiary text-xl md:text-3xl">folder</span>
+                    <span className="text-[8px] md:text-[10px] mt-1 text-on-tertiary-fixed font-medium">{folder.name}</span>
                     
                     {/* Hover Tooltip */}
-                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-surface text-[9px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-30 shadow-lg">
+                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-surface text-[9px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-30 shadow-lg hidden md:block">
                       {folder.desc}
                       <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-on-surface"></div>
                     </div>
@@ -112,15 +112,15 @@ const Herosection = () => {
               initial={{ opacity: 0, x: 50, rotate: 10, filter: "blur(8px)" }}
               animate={{ opacity: 0.7, x: 0, rotate: 4, filter: "blur(4px)" }}
               whileHover={{ opacity: 1, rotate: 0, scale: 1.05, zIndex: 50, filter: "blur(0px)" }}
-              className="absolute bottom-20 right-10 glass-panel p-6 rounded-xl shadow-2xl w-64 z-20 cursor-default transition-all duration-300"
+              className="absolute bottom-10 right-4 md:bottom-20 md:right-10 glass-panel p-4 md:p-6 rounded-xl shadow-2xl w-48 md:w-64 z-20 cursor-default transition-all duration-300 scale-75 md:scale-100"
             >
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-xs uppercase tracking-tighter text-primary font-bold">Core Products</span>
+              <div className="flex items-center justify-between mb-3 md:mb-4">
+                <span className="text-[10px] md:text-xs uppercase tracking-tighter text-primary font-bold">Core Products</span>
                 <div className="flex gap-1">
-                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-primary animate-pulse"></div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-2 md:gap-4">
                 {[
                   { name: "POS Mini", desc: "Micro Business" },
                   { name: "Health Pro", desc: "Large Scale Medical" },
@@ -129,18 +129,18 @@ const Herosection = () => {
                 ].map((folder, i) => (
                   <div
                     key={folder.name}
-                    className="relative aspect-square bg-primary-fixed rounded-lg flex flex-col items-center justify-center p-2 group cursor-pointer"
+                    className="relative aspect-square bg-primary-fixed rounded-lg flex flex-col items-center justify-center p-1 md:p-2 group cursor-pointer"
                   >
                     <span 
-                      className="material-symbols-outlined text-primary text-3xl"
+                      className="material-symbols-outlined text-primary text-xl md:text-3xl"
                       style={{ fontVariationSettings: i === 0 ? "'FILL' 1" : "" }}
                     >
                       folder
                     </span>
-                    <span className="text-[10px] mt-1 text-on-primary-fixed font-medium">{folder.name}</span>
+                    <span className="text-[8px] md:text-[10px] mt-1 text-on-primary-fixed font-medium">{folder.name}</span>
 
                     {/* Hover Tooltip */}
-                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[9px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-30 shadow-lg">
+                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[9px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-30 shadow-lg hidden md:block">
                       {folder.desc}
                       <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
                     </div>
@@ -150,55 +150,54 @@ const Herosection = () => {
             </motion.div>
 
             {/* Interactive Demo UI */}
-            <div className="w-[85%] h-[80%] bg-surface-container-lowest rounded-2xl shadow-[0_32px_64px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col border border-outline-variant/10">
+            <div className="w-[90%] md:w-[85%] h-[70%] md:h-[80%] bg-surface-container-lowest rounded-2xl shadow-[0_32px_64px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col border border-outline-variant/10">
               {/* Tab Bar */}
-              <div className="h-14 bg-surface-container flex items-center px-4 gap-4">
-                <div className="flex bg-surface-variant p-1 rounded-lg">
-                  <button className="px-4 py-1 text-sm font-medium rounded-md transition-colors text-on-surface-variant">
+              <div className="h-10 md:h-14 bg-surface-container flex items-center px-3 md:px-4 gap-2 md:gap-4">
+                <div className="flex bg-surface-variant p-0.5 md:p-1 rounded-lg">
+                  <button className="px-2 md:px-4 py-0.5 md:py-1 text-[10px] md:text-sm font-medium rounded-md transition-colors text-on-surface-variant">
                     Chat
                   </button>
-                  <button className="px-4 py-1 text-sm font-medium rounded-md bg-surface shadow-sm text-on-surface">
+                  <button className="px-2 md:px-4 py-0.5 md:py-1 text-[10px] md:text-sm font-medium rounded-md bg-surface shadow-sm text-on-surface">
                     Cowork
                   </button>
                 </div>
-                <div className="flex-grow h-8 bg-surface-variant/40 rounded-full"></div>
+                <div className="flex-grow h-6 md:h-8 bg-surface-variant/40 rounded-full"></div>
               </div>
               <div className="flex-grow flex overflow-hidden">
                 {/* Cowork Surface */}
-                <div className="flex-grow p-8 bg-surface">
-                  <div className="flex items-center gap-3 mb-8">
-                    <div className="w-10 h-10 bg-primary-fixed rounded-lg flex items-center justify-center">
-                      <span className="material-symbols-outlined text-primary">auto_awesome</span>
+                <div className="flex-grow p-4 md:p-8 bg-surface overflow-y-auto">
+                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-8">
+                    <div className="w-8 h-8 md:w-10 md:h-10 bg-primary-fixed rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="material-symbols-outlined text-primary text-xl md:text-2xl">auto_awesome</span>
                     </div>
                     <div>
-                      <h3 className="font-serif text-lg font-bold">STAX Integrated Ecosystem</h3>
-                      <p className="text-xs text-on-surface-variant">Syncing STAXMini & Health Pro • Just now</p>
+                      <h3 className="font-serif text-sm md:text-lg font-bold leading-tight">STAX Ecosystem</h3>
+                      <p className="text-[9px] md:text-xs text-on-surface-variant">Syncing devices • Just now</p>
                     </div>
                   </div>
-                  <div className="space-y-4">
-                    <div className="h-4 bg-surface-container rounded w-3/4"></div>
-                    <div className="h-4 bg-surface-container rounded w-full"></div>
-                    <div className="h-4 bg-surface-container rounded w-5/6"></div>
-                    <div className="h-4 bg-surface-container rounded w-1/2"></div>
-                    <div className="pt-8 grid grid-cols-2 gap-4">
-                      <div className="h-32 bg-surface-container rounded-xl border-2 border-dashed border-outline-variant/30 flex items-center justify-center flex-col gap-2">
-                        <span className="material-symbols-outlined text-outline-variant">point_of_sale</span>
-                        <span className="text-[10px] text-on-surface-variant uppercase font-bold">POS KITS</span>
+                  <div className="space-y-3 md:space-y-4">
+                    <div className="h-3 md:h-4 bg-surface-container rounded w-3/4"></div>
+                    <div className="h-3 md:h-4 bg-surface-container rounded w-full"></div>
+                    <div className="h-3 md:h-4 bg-surface-container rounded w-5/6"></div>
+                    <div className="pt-4 md:pt-8 grid grid-cols-2 gap-3 md:gap-4">
+                      <div className="h-24 md:h-32 bg-surface-container rounded-xl border-2 border-dashed border-outline-variant/30 flex items-center justify-center flex-col gap-1 md:gap-2">
+                        <span className="material-symbols-outlined text-outline-variant text-xl md:text-2xl">point_of_sale</span>
+                        <span className="text-[8px] md:text-[10px] text-on-surface-variant uppercase font-bold">POS KITS</span>
                       </div>
-                      <div className="h-32 bg-surface-container rounded-xl border-2 border-dashed border-outline-variant/30 flex items-center justify-center flex-col gap-2">
-                        <span className="material-symbols-outlined text-outline-variant">medical_services</span>
-                        <span className="text-[10px] text-on-surface-variant uppercase font-bold">HEALTH KITS</span>
+                      <div className="h-24 md:h-32 bg-surface-container rounded-xl border-2 border-dashed border-outline-variant/30 flex items-center justify-center flex-col gap-1 md:gap-2">
+                        <span className="material-symbols-outlined text-outline-variant text-xl md:text-2xl">medical_services</span>
+                        <span className="text-[8px] md:text-[10px] text-on-surface-variant uppercase font-bold">HEALTH KITS</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                {/* Context Sidebar */}
-                <div className="w-64 border-l border-outline-variant/10 bg-surface-container-low p-6 flex flex-col gap-6">
+                {/* Context Sidebar - Hidden on mobile for space */}
+                <div className="hidden sm:flex w-48 md:w-64 border-l border-outline-variant/10 bg-surface-container-low p-4 md:p-6 flex-col gap-6">
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant block mb-4">
+                    <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-on-surface-variant block mb-4">
                       Product Categories
                     </span>
-                    <div className="space-y-3">
+                    <div className="space-y-2 md:space-y-3">
                       {[
                         { icon: "shopping_cart", name: "STAXMini POS", color: "text-tertiary" },
                         { icon: "health_and_safety", name: "STAXHealth Pro", color: "text-primary", bold: true },
@@ -207,16 +206,13 @@ const Herosection = () => {
                       ].map((res) => (
                         <div
                           key={res.name}
-                          className="flex items-center gap-2 p-2 bg-surface rounded-lg shadow-sm border border-outline-variant/5"
+                          className="flex items-center gap-2 p-1.5 md:p-2 bg-surface rounded-lg shadow-sm border border-outline-variant/5"
                         >
-                          <span className={`material-symbols-outlined text-sm ${res.color}`}>{res.icon}</span>
-                          <span className={`text-xs truncate ${res.bold ? "font-bold" : ""}`}>{res.name}</span>
+                          <span className={`material-symbols-outlined text-xs md:text-sm ${res.color}`}>{res.icon}</span>
+                          <span className={`text-[10px] md:text-xs truncate ${res.bold ? "font-bold" : ""}`}>{res.name}</span>
                         </div>
                       ))}
                     </div>
-                  </div>
-                  <div className="mt-auto">
-                    {/* Build progress box removed as per user request */}
                   </div>
                 </div>
               </div>
