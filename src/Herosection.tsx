@@ -48,7 +48,7 @@ const Herosection = () => {
                   <span className="flex-shrink mx-4 text-xs tracking-widest text-on-surface-variant/50 uppercase">OR</span>
                   <div className="flex-grow border-t border-outline-variant/30"></div>
                 </div>
-                <div className="space-y-4">
+                {/* <div className="space-y-4">
                   <input
                     className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
                     placeholder="Email address"
@@ -57,16 +57,16 @@ const Herosection = () => {
                   <button className="w-full bg-on-surface text-surface py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
                     Continue
                   </button>
-                </div>
+                </div> */}
               </motion.div>
 
-              <button className="flex items-center gap-3 text-on-surface-variant text-sm uppercase tracking-wider hover:text-primary transition-colors group">
+              {/* <button className="flex items-center gap-3 text-on-surface-variant text-sm uppercase tracking-wider hover:text-primary transition-colors group">
                 <span className="material-symbols-outlined text-[20px]">monitor</span>
                 Download desktop app
                 <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">
                   arrow_forward
                 </span>
-              </button>
+              </button> */}
             </div>
           </section>
 
