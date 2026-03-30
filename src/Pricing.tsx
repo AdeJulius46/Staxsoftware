@@ -39,15 +39,15 @@ const Pricing = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {(planType === "individual" ? [
                 {
-                  name: "Starter",
-                  price: "$0",
+                  name: "Health",
+                  price: "₦",
                   description: "Try STAX for free",
                   subtext: "Free for everyone",
                   features: ["Basic POS application", "Single location management", "Community support", "Standard reporting"],
                   icon: "hub"
                 },
                 {
-                  name: "Pro",
+                  name: "Commerce",
                   price: "$17",
                   description: "For everyday productivity",
                   subtext: "Per month with annual subscription",
@@ -56,7 +56,7 @@ const Pricing = () => {
                   popular: true
                 },
                 {
-                  name: "Max",
+                  name: "Education",
                   price: "From $100",
                   description: "Large scale operations",
                   subtext: "Per month billed monthly",

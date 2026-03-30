@@ -2,6 +2,13 @@ import React from 'react'
 import { motion } from "motion/react";
 
 const Herosection = () => {
+  const newLocal = <button className="w-full flex items-center justify-center gap-3 border border-outline-variant py-3 rounded-lg hover:bg-surface-container transition-colors mb-6">
+    <img
+      alt="Google Logo"
+      className="w-5 h-5"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-39xWwnaC-kDxuq0tEf7shD9IazRgLFTzXmgJ2CSi3jHw8_7bDlTQpiFBccnSSJI3Sg89nLUGhR7GVBNdTcRjpNPJFxf8b6VITePLUbnJDncbRm6mOdJmLdsp8xW3dk7S1-VU9UqClA6mNJIVLU-2nJJaUqrI7Y5D4tACHZAn6ayWXhYgWwtFS9mKG_-N2R_zMO1o8vGw_WVTcp6rr7i0EOmF5NgaxcJMKFTrjiwcEAvV5UsIIN9uiZFb8RmRqP4LNDcXFoeNMuA" />
+    <span className="font-medium text-on-surface">Continue with Google</span>
+  </button>;
   return (
     <div>
           <main className="fflex-grow pt-20 flex flex-col">
@@ -35,19 +42,12 @@ const Herosection = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] mb-8"
               >
-                <button className="w-full flex items-center justify-center gap-3 border border-outline-variant py-3 rounded-lg hover:bg-surface-container transition-colors mb-6">
-                  <img
-                    alt="Google Logo"
-                    className="w-5 h-5"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-39xWwnaC-kDxuq0tEf7shD9IazRgLFTzXmgJ2CSi3jHw8_7bDlTQpiFBccnSSJI3Sg89nLUGhR7GVBNdTcRjpNPJFxf8b6VITePLUbnJDncbRm6mOdJmLdsp8xW3dk7S1-VU9UqClA6mNJIVLU-2nJJaUqrI7Y5D4tACHZAn6ayWXhYgWwtFS9mKG_-N2R_zMO1o8vGw_WVTcp6rr7i0EOmF5NgaxcJMKFTrjiwcEAvV5UsIIN9uiZFb8RmRqP4LNDcXFoeNMuA"
-                  />
-                  <span className="font-medium text-on-surface">Continue with Google</span>
-                </button>
-                <div className="relative flex items-center mb-6">
+                {/* {newLocal} */}
+                {/* <div className="relative flex items-center mb-6">
                   <div className="flex-grow border-t border-outline-variant/30"></div>
                   <span className="flex-shrink mx-4 text-xs tracking-widest text-on-surface-variant/50 uppercase">OR</span>
                   <div className="flex-grow border-t border-outline-variant/30"></div>
-                </div>
+                </div> */}
                 {/* <div className="space-y-4">
                   <input
                     className="w-full px-4 py-3 rounded-lg border border-outline-variant focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
