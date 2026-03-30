@@ -48,7 +48,7 @@ const Pricing = () => {
                 },
                 {
                   name: "Commerce",
-                  price: "$17",
+                  price: "₦17",
                   description: "For everyday productivity",
                   subtext: "Per month with annual subscription",
                   features: ["Advanced analytics dashboard", "Multi-location syncing", "Priority email support", "Custom inventory tracking"],
@@ -57,7 +57,7 @@ const Pricing = () => {
                 },
                 {
                   name: "Education",
-                  price: "From $100",
+                  price: "From ₦100",
                   description: "Large scale operations",
                   subtext: "Per month billed monthly",
                   features: ["Full hardware integration", "24/7 Dedicated support", "Custom API access", "White-label solutions"],
