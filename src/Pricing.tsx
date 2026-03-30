@@ -65,16 +65,16 @@ const Pricing = () => {
                 }
               ] : [
                 {
-                  name: "Starter",
-                  price: "$0",
+                  name: "Health",
+                  price: "₦0",
                   description: "For small teams",
                   subtext: "Up to 3 members",
                   features: ["Shared POS workspace", "Team collaboration tools", "Standard reporting", "Community support"],
                   icon: "groups"
                 },
                 {
-                  name: "Pro",
-                  price: "$25",
+                  name: "Commerce",
+                  price: "₦25",
                   description: "Advanced team features",
                   subtext: "Per user/month, billed annually",
                   features: ["Everything in Individual Pro", "Admin control panel", "Team performance analytics", "Priority 24/7 support"],
@@ -82,7 +82,7 @@ const Pricing = () => {
                   popular: true
                 },
                 {
-                  name: "Max",
+                  name: "Education",
                   price: "Custom",
                   description: "Enterprise scale",
                   subtext: "Contact sales for pricing",
