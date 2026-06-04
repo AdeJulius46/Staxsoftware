@@ -42,12 +42,6 @@ function Navbar() {
             ))}
           </div>
           <div className="flex items-center space-x-6">
-            <button className=" hidden md:block text-on-surface opacity-70 hover:opacity-100 transition-all font-serif tracking-tight ">
-              Log In
-            </button>
-            <button className="bg-primary text-on-primary px-5 py-2 rounded-lg font-medium shadow-sm hover:-translate-y-0.5 active:scale-95 transition-all duration-300">
-              Get Started
-            </button>
           </div>
         </div>
       </nav>
