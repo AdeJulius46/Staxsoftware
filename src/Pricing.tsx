@@ -40,15 +40,15 @@ const Pricing = () => {
               {(planType === "individual" ? [
                 {
                   name: "Health",
-                  price: "₦",
-                  description: "Try STAX for free",
+                  price: "₦150,000",
+                  description: "Try health pro for free",
                   subtext: "Free for everyone",
                   features: ["Basic POS application", "Single location management", "Community support", "Standard reporting"],
                   icon: "hub"
                 },
                 {
-                  name: "Commerce",
-                  price: "₦17",
+                  name: "Storebook",
+                  price: "₦60,000",
                   description: "For everyday productivity",
                   subtext: "Per month with annual subscription",
                   features: ["Advanced analytics dashboard", "Multi-location syncing", "Priority email support", "Custom inventory tracking"],
@@ -56,38 +56,38 @@ const Pricing = () => {
                   popular: true
                 },
                 {
-                  name: "Education",
-                  price: "From ₦100",
+                  name: "Kit check",
+                  price: "₦57,000",
                   description: "Large scale operations",
                   subtext: "Per month billed monthly",
                   features: ["Full hardware integration", "24/7 Dedicated support", "Custom API access", "White-label solutions"],
                   icon: "schema"
                 }
               ] : [
-                {
+               {
                   name: "Health",
-                  price: "₦0",
-                  description: "For small teams",
-                  subtext: "Up to 3 members",
-                  features: ["Shared POS workspace", "Team collaboration tools", "Standard reporting", "Community support"],
-                  icon: "groups"
+                  price: "₦150,000",
+                  description: "Try health pro for free",
+                  subtext: "Free for everyone",
+                  features: ["Basic POS application", "Single location management", "Community support", "Standard reporting"],
+                  icon: "hub"
                 },
                 {
-                  name: "Commerce",
-                  price: "₦25",
-                  description: "Advanced team features",
-                  subtext: "Per user/month, billed annually",
-                  features: ["Everything in Individual Pro", "Admin control panel", "Team performance analytics", "Priority 24/7 support"],
-                  icon: "corporate_fare",
+                  name: "Storebook",
+                  price: "₦60,000",
+                  description: "For everyday productivity",
+                  subtext: "Per month with annual subscription",
+                  features: ["Advanced analytics dashboard", "Multi-location syncing", "Priority email support", "Custom inventory tracking"],
+                  icon: "account_tree",
                   popular: true
                 },
                 {
-                  name: "Education",
-                  price: "Custom",
-                  description: "Enterprise scale",
-                  subtext: "Contact sales for pricing",
-                  features: ["Everything in Team Pro", "SLA guarantees", "Dedicated account manager", "On-site hardware setup"],
-                  icon: "business_center"
+                  name: "Kit check",
+                  price: "₦57,000",
+                  description: "Large scale operations",
+                  subtext: "Per month billed monthly",
+                  features: ["Full hardware integration", "24/7 Dedicated support", "Custom API access", "White-label solutions"],
+                  icon: "schema"
                 }
               ]).map((plan, idx) => (
                 <motion.div 
